@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no" ?>
+<!DOCTYPE ARINC665_CONFIGURATION_FILE SYSTEM "LSPB.dtd">
+<ARINC665_CONFIGURATION_FILE version="3">
+    <KEY>C823CD5851DB</KEY>
+    <CODE>XYZ</CODE>
+    <THW_ID_LIST number="2">
+        <THW_ID>THWID1</THW_ID>
+        <THW_ID>THWID2</THW_ID>
+    </THW_ID_LIST>
+    <PART_NUMBER>ABCDEFGH</PART_NUMBER>
+    <LOAD integrity_check="MD5">
+        <TYPE_DESCRIPTION id="42330">MY OPERATIONAL SW</TYPE_DESCRIPTION>
+        <INPUT_FILE integrity_check="SHA-1" padding="10">path\filename.extension</INPUT_FILE>
+        <SPLIT_SIZE>32748</SPLIT_SIZE>
+        <DIRECTORY>GEN_FILES</DIRECTORY>
+        <SUPPORT_FILE_LIST integrity_check="MD5" number="2">
+            <SUPPORT_FILE>path\support_filename.extension</SUPPORT_FILE>
+            <SUPPORT_FILE>path\user_data_filename.extension</SUPPORT_FILE>
+        </SUPPORT_FILE_LIST>
+        <USER_DATA>
+            <USER_DATA_FILE>path\user_data_filename.extension</USER_DATA_FILE>
+        </USER_DATA>
+    </LOAD>
+</ARINC665_CONFIGURATION_FILE>
